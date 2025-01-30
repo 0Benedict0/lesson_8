@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Float</title>
+  </head>
+  <body>
+    <!-- Один блок ліворуч, один праворуч -->
+    <div class="container">
+      <div class="box left">Л</div>
+      <div class="box right">П</div>
+    </div>
+
+    <!-- Один блок ліворуч, кілька праворуч -->
+    <div class="container">
+      <div class="box left">Л</div>
+      <div class="box right">П1</div>
+      <div class="box right">П2</div>
+      <div class="box right">П3</div>
+    </div>
+
+    <!-- Два блоки ліворуч, два праворуч -->
+    <div class="container">
+      <div class="box left">Л1</div>
+      <div class="box left">Л2</div>
+      <div class="box right">П1</div>
+      <div class="box right">П2</div>
+    </div>
+
+    <!-- Три блоки праворуч (два з них один під одним) -->
+    <div class="container">
+      <div class="box right">П1</div>
+      <div class="box right" style="clear: right">П2</div>
+      <div class="box right">П3</div>
+    </div>
+
+    <!-- Три блоки по центру (два з них один під одним) -->
+    <div class="container" style="text-align: center">
+      <div class="box center">Ц1</div>
+      <div class="box center" style="clear: left">Ц2</div>
+      <div class="box center">Ц3</div>
+    </div>
+  </body>
+</html>
