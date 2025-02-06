@@ -7,13 +7,11 @@
     <title>Float</title>
   </head>
   <body>
-    <!-- Один блок ліворуч, один праворуч -->
     <div class="container">
       <div class="box left">Л</div>
       <div class="box right">П</div>
     </div>
 
-    <!-- Один блок ліворуч, кілька праворуч -->
     <div class="container">
       <div class="box left">Л</div>
       <div class="box right">П1</div>
@@ -21,26 +19,28 @@
       <div class="box right">П3</div>
     </div>
 
-    <!-- Два блоки ліворуч, два праворуч -->
     <div class="container">
       <div class="box left">Л1</div>
       <div class="box left">Л2</div>
       <div class="box right">П1</div>
       <div class="box right">П2</div>
     </div>
-
-    <!-- Три блоки праворуч (два з них один під одним) -->
-    <div class="container">
-      <div class="box right">П1</div>
-      <div class="box right" style="clear: right">П2</div>
-      <div class="box right">П3</div>
+    <div class="container clearfix">
+      <div class="small-container right">
+        <div class="block right">П 2</div>
+        <div class="block right">П 3</div>
+      </div>
+      <div class="large-block right">П1</div>
     </div>
 
-    <!-- Три блоки по центру (два з них один під одним) -->
-    <div class="container" style="text-align: center">
-      <div class="box center">Ц1</div>
-      <div class="box center" style="clear: left">Ц2</div>
-      <div class="box center">Ц3</div>
+    <div class="container">
+      <div class="medium-container">
+        <div class="small-container right">
+          <div class="block right">П 2</div>
+          <div class="block right">П 3</div>
+        </div>
+        <div class="block left-blok">П 1</div>
+      </div>
     </div>
   </body>
 </html>

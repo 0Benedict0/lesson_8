@@ -1,12 +1,8 @@
-body {
-  font-family: Arial, sans-serif;
-}
 .container {
   width: 800px;
   margin: 20px auto;
   overflow: hidden; /* Очищення float */
   border: 1px solid #ddd;
-  padding: 10px;
 }
 .box {
   width: 100px;
@@ -26,5 +22,46 @@ body {
 .center {
   float: left;
   margin-left: 50%;
-  transform: translateX(-50%); /* Центрування */
+  transform: translateX(-50%);
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  margin: 1px;
+}
+
+.medium-container {
+  width: min(40% - 150px, 1340px);
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.small-container {
+  width: 100px;
+  height: 200px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.large-block {
+  width: 100px;
+  height: 200px;
+  background-color: #3498db;
+  text-align: center;
+  line-height: 50px;
+  margin: 5px;
+}
+
+.left-blok {
+  width: 50px;
+  height: 200px;
+  background-color: #3498db;
+  text-align: center;
+  line-height: 50px;
+  margin: 5px;
 }
